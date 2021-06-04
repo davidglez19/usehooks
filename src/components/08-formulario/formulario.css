@@ -1,0 +1,17 @@
+body{
+    padding: 70px;
+}
+.wraper {
+    padding: 5px 20px;
+
+}
+fieldset {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+
+}
+.wraper fieldset {
+    margin:  20px 0;
+    padding: 10px;
+}
