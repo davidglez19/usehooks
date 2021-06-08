@@ -5,14 +5,16 @@ export const useForm = (initialState = {}) => {
     const [formState, setFormState] = useState(initialState)
 
     const handlerOnChange = (e) => {
-        setFormState ({
+        setFormState({
             ...formState,
-            [e.target.name] : e.target.value
+            [e.target.name]: e.target.value
         })
-
+    }
+    const reset = () => {
+        setFormState(initialState)
     }
 
-    return [formState, handlerOnChange ];
+    return [formState, handlerOnChange, reset];
 
 
 }
